@@ -1,0 +1,24 @@
+USAGE OF STRING
+-> its Immutable (cannot be changed once created)
+-> Fixed text
+-> Its Read-only data,Where modifications are rare.
+String name = "hello";
+System.out.println(name.toUpperCase());
+
+USAGE OF STRINGBUILDER
+-> Its Mutable (can change without creating new object)
+-> Its Not thread-safe
+-> used for Frequent string modification,Loops / concatenation,Single-threaded programs
+StringBuilder sb = new StringBuilder();
+for(int i = 0; i < 5; i++){
+    sb.append(i);
+}
+System.out.println(sb);
+
+USAGE OF STRINGBUFFER
+->Its mutable
+->Its Thread-safe (synchronized)
+-> Safe for multi-threading But slower than StringBuilder
+StringBuffer sb = new StringBuffer("hello");
+sb.append(" world");
+System.out.println(sb);
