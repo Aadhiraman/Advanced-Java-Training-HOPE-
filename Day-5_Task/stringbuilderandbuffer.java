@@ -1,6 +1,5 @@
 public class stringbuilderandbuffer {
   public static void main(String[] args) {
-    //STRING BUILDER
     StringBuilder sb = new StringBuilder("Good Morning");
     sb.append("!");
     System.out.println(sb);
@@ -12,8 +11,7 @@ public class stringbuilderandbuffer {
     System.out.println(sb);
     sb.reverse();
     System.out.println(sb);
-    
-    // STRING BUFFER
+  
     StringBuffer s = new StringBuffer("Good Morning");
     s.append("@");
     System.out.println(s);
