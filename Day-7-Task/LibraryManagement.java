@@ -10,9 +10,9 @@ public class LibraryManagement {
         lib.addBook(b1);
         lib.addBook(b2);
         lib.addBook(ib1);
-        IO.println("\nLibrary Books:");
+        System.out.println("\nLibrary Books:");
         lib.displayAllBooks();
-        IO.println("\nIssued Book Details:");
+        System.out.println("\nIssued Book Details:");
         ib1.displayIssuedBook();
     }
 }
@@ -28,9 +28,9 @@ class Book {
     }
 
     void displayBook() {
-         IO.println("Book ID: " + bookId);
-         IO.println("Title: " + title);
-         IO.println("Author: " + author);
+         System.out.println("Book ID: " + bookId);
+         System.out.println("Title: " + title);
+         System.out.println("Author: " + author);
     }
 }
 class IssuedBook extends Book {
