@@ -1,4 +1,4 @@
-package Day10.Programs;
+
 import java.util.*;
 public class GetterSetter {
     public static void main(String [] args)

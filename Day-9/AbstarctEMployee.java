@@ -1,4 +1,3 @@
-package Day9.Programs;
 
 public class AbstarctEMployee {
     public static void main(String [] args)

@@ -1,4 +1,4 @@
-package Day9.Programs;
+
 
 public class Interface {
     public static void main(String [] args)

@@ -1,4 +1,4 @@
-package Day10.Task;
+
 import java.util.*;
 public class CarCreation {
     public static void main(String [] args)

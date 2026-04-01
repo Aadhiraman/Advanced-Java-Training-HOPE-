@@ -1,4 +1,4 @@
-package Day9.Task;
+
 import java.util.*;
 public class DiamondPatterninOOPS {
     public static void main(String [] args)
