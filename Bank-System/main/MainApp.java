@@ -10,10 +10,8 @@ public class MainApp {
 
         Account s1 = new SavingsAccount(101, "Aadhi", 1000);
         Account c1 = new CurrentAccount(102, "Ravi", 2000);
-
         bank.addAccount(s1);
         bank.addAccount(c1);
-
         try {
             Validator.validateAmount(500);
             s1.deposit(500);
