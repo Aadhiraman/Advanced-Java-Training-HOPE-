@@ -2,34 +2,40 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 class EmailService {
-    private ArrayList<Email> emailList = new ArrayList<>();
+    ArrayList<Email> list = new ArrayList<>();
 
-    public void addEmail(Email email) {
-        emailList.add(email);
-        System.out.println("Email added!");
+    void sendEmail(Email e) {
+        list.add(e);
+        System.out.println("Email Sent!");
     }
 
-    public void showAllEmails() {
-        if (emailList.isEmpty()) {
+    void viewEmails() {
+        if (list.isEmpty()) {
             System.out.println("No emails found.");
             return;
         }
 
-        Iterator<Email> it = emailList.iterator();
+        Iterator<Email> it = list.iterator();
         while (it.hasNext()) {
-            it.next().displayEmail();
+            it.next().display();
         }
     }
 
-    public void deleteEmail(String to) {
-        Iterator<Email> it = emailList.iterator();
+    void deleteEmail(String to) {
+        Iterator<Email> it = list.iterator();
+        boolean found = false;
+
         while (it.hasNext()) {
-            if (it.next().getTo().equalsIgnoreCase(to)) {
-                it.remove();
-                System.out.println("Email deleted!");
-                return;
+            Email e = it.next();
+            if (e.to.equalsIgnoreCase(to)) {
+                it.remove(); // Iterator remove
+                found = true;
+                System.out.println("Email Deleted!");
             }
         }
-        System.out.println("Email not found.");
+
+        if (!found) {
+            System.out.println("Email not found.");
+        }
     }
 }

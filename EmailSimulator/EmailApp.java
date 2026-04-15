@@ -25,10 +25,10 @@ public class EmailApp {
                 System.out.print("Enter body: ");
                 String body = sc.nextLine();
 
-                service.addEmail(new Email(to, subject, body));
+                service.sendEmail(new Email(to, subject, body));
 
             } else if (choice == 2) {
-                service.showAllEmails();
+                service.viewEmails();
 
             } else if (choice == 3) {
                 System.out.print("Enter receiver to delete: ");
